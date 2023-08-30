@@ -1,6 +1,6 @@
 name: snowflake-infra
 
-# Controls when the action will run . 
+# Controls when the action will  r un . 
 on:
   push:
     branches:
