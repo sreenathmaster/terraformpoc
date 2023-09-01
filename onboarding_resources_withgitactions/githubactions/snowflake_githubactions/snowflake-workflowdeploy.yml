@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - 'snowflake_modules/**'
+      - 'onboarding_resources_withgitactions/githubactions/snowflake_githubactions/snowflake-workflowdeploy.yml'
 
   # Allowd   you to run this workflow manually from the Actions tab
 #  workflow_dispatch:
