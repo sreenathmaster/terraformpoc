@@ -4,7 +4,7 @@ name: snowflake-infra
 on:
   push:
     branches:
-      - main
+      - abc
     paths:
       - 'snowflake_modules/**'
 
