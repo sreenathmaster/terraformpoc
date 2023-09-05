@@ -1,15 +1,7 @@
 name: snowflake-infra
 
 # C  o  ntrols when the action will  r u n . 
-on:
-  push:
-    branches:
-      - main
-    #paths:
-      #- 'snowflake_modules/**'
-
-  # Allows you to run this workflow manually from the Actions tab
-#  workflow_dispatch:
+on: [workflow_dispatch]
 
 jobs:
   deploy-snowflake-changes-job:

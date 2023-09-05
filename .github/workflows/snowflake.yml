@@ -1,16 +1,9 @@
 name: snowflake-schemachange
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'snowflake_modules/**'
-
-workflow_dispatch:
+on: [workflow_dispatch]
 
 jobs:
-  deploy-snowflake-changes-job:
+  Schemachange:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,6 +15,11 @@ jobs:
         uses: actions/setup-python@v2.2.1
         with:
           python-version: 3.8.x
+
+      - name: Install schemachange
+        run: |
+          echo "Step 1: Installing schemachange"
+          pip install schemachange		  
 
       - name: Run schemachange
         env:
